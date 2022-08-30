@@ -76,6 +76,10 @@
   }
 }
 
+.miniscule-text{
+  display: none
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -150,11 +154,6 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1rem;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
 }
 
 abbr[title],
@@ -235,11 +234,12 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+  color: #D4F6FF;
   text-decoration: underline;
+  font-weight: bold
 }
 a:hover {
-  color: #0a58ca;
+  color: #e9e6ff;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -490,6 +490,18 @@ progress {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
+}
+
+.lead-main{
+  font-size: 1.7rem;
+  font-weight: 300;
+  font-style: italic;
+  background-color: rgba(33, 128, 165, 0.6);
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 18px;
+  margin-bottom: 25px
 }
 
 .display-1 {
@@ -7645,6 +7657,7 @@ textarea.form-control-lg {
 
 .fw-bolder {
   font-weight: bolder !important;
+  text-shadow: 5px 3px rgba(0, 0, 0, 0.8)
 }
 
 .lh-1 {
@@ -11298,4 +11311,48 @@ header {
 section {
   padding-top: 9rem;
   padding-bottom: 9rem;
+}
+
+.pretty-bg{
+  background-image: url("https://i.imgur.com/GE92AKC.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-img{
+  border-radius: 50%;
+  width: 300px;
+  padding: 30px;
+  animation: grow 3s alternate infinite ease-in;
+}
+
+.cont-add1{
+  background-color: #373435
+}
+
+.cont-add2{
+  background-color: #1F4A5B  
+}
+.cont-add3{
+  background-color: #F2E7D5
+}
+
+@keyframes grow {
+  0%   {transform: scale(1);}
+  100% {transform: scale(0.85);}
+}
+
+@media (max-width: 768px) {
+  .miniscule-text{
+    display: inline
+  }
+
+  .ginormous-text{
+    display: none
+  }
+
+  .hmm{
+    margin: 0 auto;
+    display: block
+  }
 }
